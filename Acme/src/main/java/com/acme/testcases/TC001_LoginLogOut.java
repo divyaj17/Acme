@@ -19,7 +19,7 @@ public class TC001_LoginLogOut extends ProjectSpecificMethods{
 	}
 
 	@Test(dataProvider = "fetchData")
-	public void createLeaf(String uName, String pwd) {
+	public void pageTitleCheck(String uName, String pwd) throws InterruptedException {
 		new LoginPage(driver, node, test)
 		.enterUserName(uName)
 		.enterPassword(pwd)

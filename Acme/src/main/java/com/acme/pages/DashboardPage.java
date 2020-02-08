@@ -19,8 +19,9 @@ public class DashboardPage extends ProjectSpecificMethods
 		PageFactory.initElements(driver, this);
 	}		
 
-	public DashboardPage verifyPageTitle()
+	public DashboardPage verifyPageTitle() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		String title=driver.getTitle();
 		System.out.println("Page title is :" +title);
 		return this;
